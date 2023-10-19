@@ -4,13 +4,13 @@
 
 ### High-level overview
 
-There are 3 dotnet projects: `powerplant-coding-challenges`, `REST_API`, `Tests`
+There are 3 dotnet projects: `powerplant-coding-challenge`, `REST_API`, `Tests`
 
-`powerplant-coding-challenges` is where are the models and calculations exist.
+`powerplant-coding-challenge` is where are the models and calculations exist.
 
-`REST_API` only concerns itself with API matters: serialization, deserialization and invoking the `powerplant-coding-challenges` function.
+`REST_API` only concerns itself with API matters: serialization, deserialization and invoking the `powerplant-coding-challenge` function.
 
-`Tests` is primarily focused on testing the internals of `powerplant-coding-challenges`, according to the requirements and provided examples.
+`Tests` is primarily focused on testing the internals of `powerplant-coding-challenge`, according to the requirements and provided examples.
 
 ## Code style
 
@@ -29,7 +29,7 @@ You will also see things such as `public sealed record Load(decimal LoadValue)`.
 
 * Increases the clarity (from my point of view) for the consumer of the functions: they don't just have to provide a `decimal` as input to a function, they need to provide a `Load`;
 
-* You get to better leverage the compiler when you have to perform refactors. I am usually a fan of trying to refactor something and the following the compiler and unit tests to get everything working again.
+* You get to better leverage the compiler when you have to perform refactors. I am usually a fan of trying to refactor something and then following the compiler and unit tests to get everything working again.
 
 ## Unit tests
 
